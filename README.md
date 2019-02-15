@@ -113,8 +113,11 @@ Grid Items (abhäüngig von Geräteklassen): z.B. <col-xs-2> oder <col-md-3>
 allgemein: sichtbarkeit: visible bzw. hidden bzw. show
 
 
+
+
 Bootstrap4:
 - flexgrids;
+- active class muss bei Navigationen vom listenelement zum ankertag verschoben werden.
 
 Sonstiges:
 NPM:
