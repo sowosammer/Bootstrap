@@ -10,6 +10,7 @@ Fragen:
 - Nützliche VS Code Extensions?
 - Warum nutzen wir in der DATEV nicht Angular Material für die Oberfläche als 
 	alternative zu Bootstrap. Ist gut und modern in Angular integriert (? nicht jQuery)
+- rollen in bootstrap; modul, element, rolle?
 
 
 Less (CSS Präprozessor, Superset von CSS ):
@@ -59,7 +60,7 @@ Grundsätzliches:
 	Farben: lighten, darken, spin (
 	
 Variablen:
-- Mixins (wie komplette CSS Klassen die in anderen Verwendet werden können.
+- Mixins (wie komplette CSS Klassen die in anderen Verwendet werden können. auch mit parameter möglich)
 - Hierarchien (über Parentselector (&) genau zuordnen)
 - Modul
 	
@@ -112,12 +113,39 @@ Grid Items (abhäüngig von Geräteklassen): z.B. <col-xs-2> oder <col-md-3>
 	
 allgemein: sichtbarkeit: visible bzw. hidden bzw. show
 
+collapsable - zeigt oder versteckt inhalte (benötigt jquery -> in bootstrap4 einfacher, weil schon integriert)
+	steuerung über id des zu collapsenden Element, beim Schalter wird per href #Id angegeben und über 
+	data-toggle="collapse" getoggled. Wo kein href zur Verfügung steht (z.B. button) wird das Collapseziel über data-target bestimmt.
+dropdownlist - ähnlich  wie collapsable zu bearbeiten. Auch mit jquery, und schalter.
+navbar: 
+- in container: class="navbar navbar-default" darin sind zwei child-container : header und callapse
 
+spezielles: 
+	sr-only -> für Barrierefreiheit ausgabe für Screenreader -> nicht in der Anzeige
+	hidden-print -> nicht auf ausdrucken anzeigen.
+	
+modifizieren von Werten/Elementen: nicht in den Bootstrap sourcen sondern:
+	zum nachschauen von variablen kann man in die bootstrap datei variables.less anschauen.
 
+In vsc settings: (so wird immer bei änderungen an less dateien die bootstrap.less verarbeitet)
+"less.compile": {
+        "out": false,
+        "main": "bootstrap.less", 
+        "compress": false
+    }
+
+wie und wo kann man bootstrap Werte ändern. 
+	a) bootstrap - main verwenden/kopieren und originale kopieren bzw datei mitgeänderten werten mit oldname.mod.less benennen und nach dem origingal einhängen.
+		Gefährlich, wenn updates von bootstrap kommen.
 
 Bootstrap4:
 - flexgrids;
 - active class muss bei Navigationen vom listenelement zum ankertag verschoben werden.
+- kein extra laden von jquery nötig.
+- nicht so weit abwärtskompatibel zu alten browsern (min ie9)
+
+less -> sass:
+less source keine gültige sass source -> z.B. andere variablen benennung.
 
 Sonstiges:
 NPM:
@@ -125,5 +153,8 @@ NPM:
 - wichtig immer mit npm installieren, weil dann die package.json mitaktualisiert wird.
 - genutzte Ressource; normal angeben potentiell mit @versionsnummer
 - developer Ressource: Testframework, o.ä. -> mit --save-dev
+- mit npm versionen eines Moduls feststellen (z.B. für jquery): npm view jquery versions
+EMMET:
+$ = fortlaufende Nummern
 
 https://github.com/grisham88
