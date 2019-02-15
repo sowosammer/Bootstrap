@@ -1,6 +1,7 @@
 # Bootstrap
-KursInfos Bootstrapkurs
-Schulung Bootstrap/Less
+KursInfos Bootstrap3 Kurs
+
+Schulung Bootstrap3/Less
 Referent Bongers
 
 Tolle Kursdoku auf https://github.com/grisham88
@@ -89,13 +90,27 @@ Bezeichnung:
 - padding ...
 - ...
 - Es gibt fixed Layoutbreiten mit Sprungpunkten. Randbreite wechselt, damit Content stabiler bleibt. Ab einer bestimmten breite vollflexibel.
-	Die Sprungpunkte hängen an den Geräteklassen. (xs, s, md, lg
+	Die Sprungpunkte hängen an den Geräteklassen. (xs, s, md, lg) Für 4K o.Ä. werden diese Werte hochgerechnet.
 - Layout Schachtel im Container (responsiv); container-fluid (nutzt komplette device width)
 - die classen von Bootstrap sind gut auf getboostrap.com zu finden.
 
 Unterschiede Bootstrap3-> 4;
 - z.B. abstände um Elemente 
 
+Grid:
+Gridbasis: <container> (bzw. container-fluid)
+Gridzeile: <row>
+Grid Items (abhäüngig von Geräteklassen): z.B. <col-xs-2> oder <col-md-3>
+	xs gilt ab xs weiter, wenn nichts anderes definiert wird.
+	- passen die Größen nicht mehr in eine Row, wird umgebrochen.
+	- offset in Grideinheiten setzen: z.B. zwei Einheiten in Geräteklasse xs : col-xs-offset-2
+	- vershieben im Grit mit push und pull: z.B. zwei Einheiten in Geräteklasse xs nach rechts verschieben: col-xs-push-2
+	- sichtbarkeit nach geräteklasse (genau für diese Geräteklasse): z.B.  visible-xs, hidden-md, show-sm, hidden-print
+		vererbt sich nicht (( -> außer bei Elementen die bei bestimmten Ausgaben wie print (hidden-print) besser zu nutzen))
+		visible-xs-inline bzw. visible-xs-block bzw. visible-inline-block
+	
+	
+allgemein: sichtbarkeit: visible bzw. hidden bzw. show
 
 
 Bootstrap4:
