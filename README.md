@@ -1,10 +1,10 @@
 # Bootstrap
 KursInfos Bootstrap3 Kurs
 
-Schulung Bootstrap3/Less
+## Schulung Bootstrap3/Less
 Referent Bongers
 
-Tolle Kursdoku auf https://github.com/grisham88
+Tolle Kursdoku auf [dieser Seite] (https://github.com/grisham88)
 
 Fragen: 
 - Nützliche VS Code Extensions?
@@ -13,7 +13,7 @@ Fragen:
 - rollen in bootstrap; modul, element, rolle?
 
 
-Less (CSS Präprozessor, Superset von CSS ):
+### Less (CSS Präprozessor, Superset von CSS ):
 hat
 - Variablen
 - Funktionen
@@ -22,7 +22,7 @@ Grundkonzepte Modulares CSS (SMACSS-Richlinie, oder BEM (von Yandex, Block Eleme
 - Elemente (Klassenname hat Modulnamen: z.B. .meinwidget_headline, .meinwidget_content)
 - State Modifier (.meinwidget_headline-isvisible)
 
-CSS:
+#### CSS:
 - Selector = <p>, <div> o.Ä.
 - Id Selector => #content => im html z.B. <div id="content">
 	im CSS (bzw. <style>), #content
@@ -66,7 +66,7 @@ Variablen:
 	
 CSS wird immer asynchron geladen; JS synchron/blockierend
 	
-Bootstrp:
+### Bootstrap:
 - CSS Präpozessor/Framework
 - Bootstrap3 in Less geschrieben
 - Bootstrap4 in Sess geschrieben
@@ -81,7 +81,7 @@ CSS-Frameworks: (z.B. Bootstrap, Skeleton, Pure.CSS, PrimeNG, ..., Angular Mater
 - Resets/Normalisierung (z.B. neue Grid cleart, setzt Werte zurück)
 - manche haben JS im Bauch
 
-Bootstrap3:
+#### Bootstrap3:
 - werden Funktionen aus der bootstrap.js benötigt, muss jquery zu installiert werden.
 
 
@@ -138,7 +138,7 @@ wie und wo kann man bootstrap Werte ändern.
 	a) bootstrap - main verwenden/kopieren und originale kopieren bzw datei mitgeänderten werten mit oldname.mod.less benennen und nach dem origingal einhängen.
 		Gefährlich, wenn updates von bootstrap kommen.
 
-Bootstrap4:
+#### Bootstrap4:
 - flexgrids;
 - active class muss bei Navigationen vom listenelement zum ankertag verschoben werden.
 - kein extra laden von jquery nötig.
